@@ -18,7 +18,7 @@
             <a class="logo link" href=""><span class="logo">WEB</span><span class="logo-header">STUDIO</span></a>
     <!---Navigation to other pages-->
             <ul class="list-nav list">
-                <li class="item"><a class="link-nav link" href="">Studio</a></li>
+                <li class="item"><a class="link-nav current link" href="">Studio</a></li>
                 <li class="item"><a class="link-nav link" href="./portfolio.html">Portfolio</a></li>
                 <li class="item"><a class="link-nav link" href="">Contacts</a></li>
             </ul>
@@ -39,7 +39,7 @@
     <div class="container"> 
                 <h1 class="caption-hero">Effective Solutions<br>
                     for Your Business</h1>
-                <button type="button" class="button-studio">Order Service</button>
+                <button type="button" class="button-studio" data-modal-open>Order Service</button>
         </section>
     </div>
     <!---Section 2-->
@@ -66,22 +66,22 @@
             <ul class="list list-studio">
                 <li class="item-studio">
                     <h3 class="slogan">Strategy</h3>
-                    <p class="text">Our goal is to identify the business
+                    <p class="text-specifics">Our goal is to identify the business
                         problem to walk away with the perfect and creative solution.</p>
                 </li>
                 <li class="item-studio">
                     <h3 class="slogan">Punctuality</h3>
-                    <p class="text">Bring the key message to the brand's audience for the best price within the
+                    <p class="text-specifics">Bring the key message to the brand's audience for the best price within the
                         shortest possible time.</p>
                 </li>
                 <li class="item-studio">
                     <h3 class="slogan">Diligence</h3>
-                    <p class="text">Research and confirm brands that present the strongest digital growth
+                    <p class="text-specifics">Research and confirm brands that present the strongest digital growth
                         opportunities and minimize risk.</p>
                 </li>
                 <li class="item-studio">
                     <h3 class="slogan">Technologies</h3>
-                    <p class="text">Design practice focused on digital experiences. We bring forth a deep
+                    <p class="text-specifics">Design practice focused on digital experiences. We bring forth a deep
                         passion for problem-solving.</p>
                 </li>
             </ul>
@@ -111,7 +111,7 @@
                     <ul class="list list-our-team">
                         <li class="img">
                             <div class="cards">
-                                <div class="card-thumb"><img src="./images/studio1.jpg" alt="wait please" width="264"></div>
+                                <img src="./images/studio1.jpg" alt="wait please" width="264">
                                 <div class="card-content">
                                     <h3 class="card-html">Mark Guerrero</h3>
                                     <p class="card-studio">Designer</p>
@@ -154,7 +154,7 @@
                         </li>
                         <li class="img">
                             <div class="cards">
-                                <div class="card-thumb"><img src="./images/studio2.jpg" alt="wait please" width="264"></div>
+                               <img src="./images/studio2.jpg" alt="wait please" width="264">
                                 <div class="card-content">
                                     <h3 class="card-html">Tom Ford</h3>
                                     <p class="card-studio">Frontend Developer</p>
@@ -196,7 +196,7 @@
                         </li>
                         <li class="img">
                             <div class="cards">
-                                <div class="card-thumb"><img src="./images/studio3.jpg" alt="wait please" width="264"></div>
+                              <img src="./images/studio3.jpg" alt="wait please" width="264">
                                 <div class="card-content">
                                     <h3 class="card-html">Camila Garcia</h3>
                                     <p class="card-studio">Marketing</p>
@@ -238,7 +238,7 @@
                         </li>
                         <li class="img">
                             <div class="cards">
-                                <div class="card-thumb"><img src="./images/studio4.jpg" alt="wait please" width="264"></div>
+                               <img src="./images/studio4.jpg" alt="wait please" width="264">
                                 <div class="card-content">
                                     <h3 class="card-html">Daniel Wilson</h3>
                                     <p class="card-studio">UI Designer</p>
@@ -355,5 +355,16 @@
                 </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" type="button" data-modal-close>
+            <svg class="modal-icon" width="24" height="24">
+                <use href="./images/close/icon.svg#icon-close"></use>
+            </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 </html>
